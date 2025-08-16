@@ -11,4 +11,8 @@ Route::get('search-drugs', [DrugController::class,'search'])->middleware('thrott
 
 Route::middleware('auth:sanctum')->group(function () {
     Route::post('logout', [AuthController::class,'logout']);
+
+    Route::get('user-drugs', [UserDrugController::class,'getUserDrugs']);
+    Route::post('user-drugs', [UserDrugController::class,'addDrug']);
+    Route::delete('user-drugs/{rxcui}', [UserDrugController::class,'deleteDrug']);
 });
