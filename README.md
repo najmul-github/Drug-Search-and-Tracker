@@ -42,13 +42,28 @@ cp .env.example .env
 # Generate application key
 php artisan key:generate
 
+# Install Laravel Sanctum
+composer require laravel/sanctum
+
+# Publish Sanctum configuration and migration files
+php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
+
 # Update database credentials in .env
 DB_DATABASE=drug_tracker
 DB_USERNAME=root
 DB_PASSWORD=
+
+# Add RxNorm API configuration in .env
+RXNAV_BASE_URL=https://rxnav.nlm.nih.gov/REST
+RXNAV_TIMEOUT_MS=8000
+RXNAV_CACHE_SECONDS=3600
 
 # Run migrations
 php artisan migrate
 
 # (Optional) Seed database
 php artisan db:seed
+
+# Run tests
+php artisan test
+
