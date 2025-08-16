@@ -589,6 +589,76 @@
 					],
 					"cookie": [],
 					"body": "{\n    \"status\": \"success\",\n    \"message\": \"Drug search completed successfully\",\n    \"data\": {\n        \"count\": 5,\n        \"items\": [\n            {\n                \"rxcui\": \"1001476\",\n                \"name\": \"aspirin 325 MG Delayed Release Oral Tablet [Ecpirin]\",\n                \"baseNames\": [],\n                \"doseForms\": []\n            },\n            {\n                \"rxcui\": \"1052416\",\n                \"name\": \"acetaminophen 250 MG / aspirin 250 MG / caffeine 65 MG Oral Tablet [Pamprin Max Formula]\",\n                \"baseNames\": [],\n                \"doseForms\": []\n            },\n            {\n                \"rxcui\": \"1052678\",\n                \"name\": \"aspirin 81 MG Delayed Release Oral Tablet [Miniprin]\",\n                \"baseNames\": [],\n                \"doseForms\": []\n            },\n            {\n                \"rxcui\": \"1053327\",\n                \"name\": \"aspirin 845 MG / caffeine 65 MG Oral Powder [Stanback Headache Powder Reformulated Jan 2011]\",\n                \"baseNames\": [],\n                \"doseForms\": []\n            },\n            {\n                \"rxcui\": \"1101754\",\n                \"name\": \"acetaminophen 194 MG / aspirin 227 MG / caffeine 33 MG Oral Tablet [Vanquish]\",\n                \"baseNames\": [],\n                \"doseForms\": []\n            }\n        ]\n    }\n}"
+				},
+				{
+					"name": "success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/search-drugs?drug_name=aspirin",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"search-drugs"
+							],
+							"query": [
+								{
+									"key": "drug_name",
+									"value": "aspirin"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.16"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 16 Aug 2025 11:01:23 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "10"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "9"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"Drug search completed successfully\",\n    \"data\": {\n        \"count\": 5,\n        \"items\": [\n            {\n                \"rxcui\": \"1001476\",\n                \"name\": \"aspirin 325 MG Delayed Release Oral Tablet [Ecpirin]\",\n                \"baseNames\": [\n                    \"aspirin\"\n                ],\n                \"doseForms\": [\n                    \"Oral Product\",\n                    \"Pill\"\n                ]\n            },\n            {\n                \"rxcui\": \"1052416\",\n                \"name\": \"acetaminophen 250 MG / aspirin 250 MG / caffeine 65 MG Oral Tablet [Pamprin Max Formula]\",\n                \"baseNames\": [\n                    \"aspirin\",\n                    \"acetaminophen\",\n                    \"caffeine\"\n                ],\n                \"doseForms\": [\n                    \"Oral Product\",\n                    \"Pill\"\n                ]\n            },\n            {\n                \"rxcui\": \"1052678\",\n                \"name\": \"aspirin 81 MG Delayed Release Oral Tablet [Miniprin]\",\n                \"baseNames\": [\n                    \"aspirin\"\n                ],\n                \"doseForms\": [\n                    \"Oral Product\",\n                    \"Pill\"\n                ]\n            },\n            {\n                \"rxcui\": \"1053327\",\n                \"name\": \"aspirin 845 MG / caffeine 65 MG Oral Powder [Stanback Headache Powder Reformulated Jan 2011]\",\n                \"baseNames\": [\n                    \"aspirin\",\n                    \"caffeine\"\n                ],\n                \"doseForms\": [\n                    \"Oral Product\",\n                    \"Oral Powder Product\"\n                ]\n            },\n            {\n                \"rxcui\": \"1101754\",\n                \"name\": \"acetaminophen 194 MG / aspirin 227 MG / caffeine 33 MG Oral Tablet [Vanquish]\",\n                \"baseNames\": [\n                    \"aspirin\",\n                    \"acetaminophen\",\n                    \"caffeine\"\n                ],\n                \"doseForms\": [\n                    \"Oral Product\",\n                    \"Pill\"\n                ]\n            }\n        ]\n    }\n}"
 				}
 			]
 		},
@@ -1052,38 +1122,64 @@
 					]
 				}
 			},
-			"response": []
-		},
-		{
-			"name": "{{base_url}}/search-drugs?drug_name=aspirin",
-			"request": {
-				"auth": {
-					"type": "noauth"
-				},
-				"method": "GET",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/json"
-					}
-				],
-				"url": {
-					"raw": "{{base_url}}/search-drugs?drug_name=aspirin",
-					"host": [
-						"{{base_url}}"
-					],
-					"path": [
-						"search-drugs"
-					],
-					"query": [
-						{
-							"key": "drug_name",
-							"value": "aspirin"
+			"response": [
+				{
+					"name": "success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{auth_token}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/logout",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"logout"
+							]
 						}
-					]
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.16"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 16 Aug 2025 11:10:02 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"Logged out successfully\",\n    \"data\": null\n}"
 				}
-			},
-			"response": []
+			]
 		}
 	],
 	"event": [
@@ -1115,7 +1211,7 @@
 		},
 		{
 			"key": "auth_token",
-			"value": "1|GQoRAmfIlUFV8I81mxJjNbxirI8Ry3W9v8ycXv6X2268f37a"
+			"value": "7|ysza01aF1NgmaqSvWreAevztdZblAE43YGLVQ9YH5bf9d03a"
 		}
 	]
 }
