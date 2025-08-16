@@ -18,10 +18,10 @@ It integrates with the **National Library of Medicine's RxNorm APIs** for drug d
 
 ## Requirements
 
-- PHP >= 8.0
+- PHP >= 8.2
 - Composer
-- MySQL
-- Laravel 10.x
+- MySQL (or other supported database)
+- Laravel 12.x
 - Internet connection (for RxNorm API calls)
 
 ---
