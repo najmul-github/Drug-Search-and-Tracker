@@ -12,7 +12,7 @@ class DrugService
 
     public function __construct()
     {
-        $this->apiUrl = config('services.rxnorm.base_url');
+        $this->apiUrl = config('services.rxnav.base_url');
     }
 
     public function searchDrugs(string $drugName): array

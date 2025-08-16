@@ -40,10 +40,6 @@ return [
         'timeout_ms' => env('RXNAV_TIMEOUT_MS', 8000),
         'cache_seconds' => env('RXNAV_CACHE_SECONDS', 3600),
     ],
-    
-    'rxnorm' => [
-        'base_url' => env('RXNORM_BASE_URL'),
-    ],
 
 
 ];
