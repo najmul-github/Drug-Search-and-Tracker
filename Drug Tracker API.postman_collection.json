@@ -20,7 +20,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"name\": \"John Doe\",\n    \"email\": \"john@example.com\",\n    \"password\": \"password\"\n}"
+					"raw": "{\n    \"name\": \"Test User\",\n    \"email\": \"test43@example.com\",\n    \"password\": \"password\",\n    \"password_confirmation\": \"password\"\n}"
 				},
 				"url": {
 					"raw": "{{base_url}}/register",
@@ -287,7 +287,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"email\": \"john@example.com\",\n    \"password\": \"password\"\n}"
+					"raw": "{\n    \"email\": \"test@example.com\",\n    \"password\": \"testpass\"\n}"
 				},
 				"url": {
 					"raw": "{{base_url}}/login",
@@ -678,7 +678,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"rxcui\": \"1191\"\n}"
+					"raw": "{\n    \"rxcui\": \"1001476\"\n}"
 				},
 				"url": {
 					"raw": "{{base_url}}/user-drugs",
@@ -1211,7 +1211,7 @@
 		},
 		{
 			"key": "auth_token",
-			"value": "7|ysza01aF1NgmaqSvWreAevztdZblAE43YGLVQ9YH5bf9d03a"
+			"value": "9|MjMQ3ViqGWCQSARyZNo1IiCrXRXXWTN3JOTwiM5Ydc5c8342"
 		}
 	]
 }
